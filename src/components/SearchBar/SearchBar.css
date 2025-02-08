@@ -4,7 +4,7 @@
     border: none;
     stroke: black;
     width: 100px;
-    height: 30px;
+    height: 34px;
     font-size: 18px;
     border-radius: 5px;
 
@@ -19,11 +19,12 @@
 
 .input-search {
 
-    height: 20px;
+    height: 30px;
     border: 1px solid;
     border-radius: 5px;
     width: 200px;
     font-size: 15px;
+    border: none;
 
 }
 
@@ -32,6 +33,11 @@
     display: flex;
     background-color: lightblue;
     justify-content: center;
+    height: 50px;
+    border-radius: 5px;
+    position: fixed;
+    width: 98vw;
+
 }
 
 .form-headder {
