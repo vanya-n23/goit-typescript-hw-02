@@ -1,7 +1,11 @@
-const ErrorMessage = ({ message }) => {
+interface ErrorMessageProps {
+  message: string;
+}
+
+const ErrorMessage: React.FC<ErrorMessageProps> = ({ message }) => {
   return (
-    <div style={{ color: "red", textAlign: "center", marginTop: "20px" }}>
-      <p>{message}</p>
+    <div className="error-message">
+      <strong>Error:</strong> {message}
     </div>
   );
 };
