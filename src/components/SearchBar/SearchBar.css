@@ -1,0 +1,43 @@
+.bnt-search {
+
+    background-color: plum;
+    border: none;
+    stroke: black;
+    width: 100px;
+    height: 30px;
+    font-size: 18px;
+    border-radius: 5px;
+
+}
+
+.bnt-search:hover {
+
+    background-color: lightsalmon;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.input-search {
+
+    height: 20px;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 200px;
+    font-size: 15px;
+
+}
+
+.Headder {
+
+    display: flex;
+    background-color: lightblue;
+    justify-content: center;
+}
+
+.form-headder {
+
+    display: flex;
+    gap: 35px;
+    align-items: center;
+
+}
