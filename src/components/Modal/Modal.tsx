@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import './Modal.css'
+import './Modal.css';
 
 interface ModalProps {
   imageUrl: string;
@@ -9,20 +9,28 @@ interface ModalProps {
 
 const Modal: React.FC<ModalProps> = ({ imageUrl, alt, onClose }) => {
   useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
         onClose();
       }
     };
 
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
+    document.addEventListener('keydown', handleKeyDown);
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown);
+    };
   }, [onClose]);
 
+  const handleOverlayClick = (event: React.MouseEvent<HTMLDivElement>) => {
+    if (event.target === event.currentTarget) {
+      onClose();
+    }
+  };
+
   return (
-    <div className="modal-overlay" onClick={onClose}>
-      <div className="modal-content">
-        <img className="modal-img" src={imageUrl} alt={alt} />
+    <div className="overlay" onClick={handleOverlayClick}>
+      <div className="modal">
+        <img src={imageUrl} alt={alt} />
       </div>
     </div>
   );

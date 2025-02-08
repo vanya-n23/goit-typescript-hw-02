@@ -35,8 +35,7 @@
     justify-content: center;
     height: 50px;
     border-radius: 5px;
-    position: fixed;
-    width: 98vw;
+    width: 100%;
 
 }
 

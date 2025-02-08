@@ -17,6 +17,12 @@ const App: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [totalImages, setTotalImages] = useState<number>(0);
 
+<ImageGallery images={images} onImageClick={setSelectedImage} />
+
+{selectedImage && (
+  <Modal imageUrl={selectedImage} alt="Selected" onClose={() => setSelectedImage(null)} />
+)}
+
   useEffect(() => {
     if (!query) return;
 
