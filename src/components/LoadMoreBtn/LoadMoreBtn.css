@@ -1,10 +1,10 @@
 .load-btn {
 
-    background-color: plum;
+    background-color: lightblue;
     border: none;
     stroke: black;
     width: 100px;
-    height: 30px;
+    height: 34px;
     font-size: 18px;
     border-radius: 5px;
 
@@ -12,7 +12,7 @@
 
 .load-btn:hover {
 
-    background-color: lightsalmon;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: black;
+    color: aliceblue;
     
 }

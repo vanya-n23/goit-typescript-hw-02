@@ -1,7 +1,7 @@
 .list-image {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 16px;
+    gap: 30px;
     list-style: none;
     padding: 0;
     margin: 20px auto;
@@ -12,4 +12,5 @@
 .item-img{
     display: flex;
     margin: 0 auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

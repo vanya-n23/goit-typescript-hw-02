@@ -1,18 +1,19 @@
 .bnt-search {
 
-    background-color: plum;
+    background-color: lightblue;
     border: none;
     stroke: black;
     width: 100px;
     height: 34px;
-    font-size: 18px;
+    font-size: 20px;
     border-radius: 5px;
 
 }
 
 .bnt-search:hover {
 
-    background-color: lightsalmon;
+    background-color: black;
+    color: aliceblue;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
@@ -20,10 +21,11 @@
 .input-search {
 
     height: 30px;
-    border: 1px solid;
     border-radius: 5px;
+    background-color: lightgrey;
+    color: black;
     width: 200px;
-    font-size: 15px;
+    font-size: 20px;
     border: none;
 
 }
@@ -31,7 +33,8 @@
 .Headder {
 
     display: flex;
-    background-color: lightblue;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: lavender;
     justify-content: center;
     height: 50px;
     border-radius: 5px;
